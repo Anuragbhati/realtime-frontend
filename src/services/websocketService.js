@@ -13,7 +13,9 @@ class WebSocketService {
     this.maxReconnectAttempts = 5;
     this.reconnectInterval = 3000; // 3 seconds
     this.heartbeatInterval = null;
-    this.serverUrl = "ws://localhost:8080";
+    this.serverUrl =
+      "wss://realtime-backend-production-3071.up.railway.app" ??
+      "ws://localhost:8080";
   }
 
   connect() {
